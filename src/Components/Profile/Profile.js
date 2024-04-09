@@ -5,19 +5,19 @@ import { Colors } from "react-native/Libraries/NewAppScreen";
 
 const Inputs = [
     {
-        label: "USERNAME",
+        label: "Tên đăng nhập",
         type: "text",
     },
     {
-        label: "EMAIL",
+        label: "Email",
         type: "text",
     },
     {
-        label: "NEW PASSWORD",
+        label: "Mật khẩu mới",
         type: "password",
     },
     {
-        label: "CONFIRM PASSWORD",
+        label: "Nhập lại mật khẩu mới",
         type: "password",
     },
 ];
@@ -38,7 +38,7 @@ const Profile = () => {
                     </View>
                 ))}
                 <Button
-                    title="UPDATE PROFILE"
+                    title="Cập nhật tài khoản"
                     buttonStyle={styles.updateButton}
                 />
             </ScrollView>
@@ -51,14 +51,14 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: Colors.white,
         paddingHorizontal: 20,
+        paddingTop: 20,
     },
     inputContainer: {
-        marginBottom: 2,
+        // marginBottom: 2,
     },
     label: {
-        paddingTop: 10,
+        paddingBottom: 5,
         paddingHorizontal: 10,
-        paddingBottom: 0,
         fontSize: 12,
         fontWeight: "bold",
     },
@@ -76,11 +76,10 @@ const styles = StyleSheet.create({
     },
     updateButton: {
         backgroundColor: 'rgba(72, 182, 0, 1)',
-        marginTop: 20,
-        marginBottom: 20,
         borderRadius: 20,
-        paddingVertical: 15,
+        paddingVertical: 10,
         paddingHorizontal: 20,
+        marginHorizontal: 10,
     },
 });
 

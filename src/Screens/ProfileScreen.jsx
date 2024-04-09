@@ -16,7 +16,6 @@ function ProfileScreen() {
                 <Text style={styles.heading}>Admin</Text>
                 <Text style={styles.subText}>Test1@gmail.com</Text>
             </View>
-            {/* Tabs */}
             <Tabs/>
         </View>
     );
@@ -27,7 +26,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#6B52AE",
         paddingTop: 10,
-        paddingBottom: 6,
+        // paddingBottom: 6,
     },
     profileContainer: {
         alignItems: "center",
@@ -50,6 +49,7 @@ const styles = StyleSheet.create({
         width: 100,
         height: 100,
         borderRadius: 50,
+        marginTop: 10,
         marginBottom: 10,
     },
 });

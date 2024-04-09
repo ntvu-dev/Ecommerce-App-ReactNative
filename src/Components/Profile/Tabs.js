@@ -3,6 +3,7 @@ import { StyleSheet, useWindowDimensions, View, Text } from "react-native";
 import { TabView, TabBar } from "react-native-tab-view";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 import Profile from "./Profile";
+import Personal from "./Personal";
 
 const renderScene = ({ route }) => {
   switch (route.key) {
@@ -10,6 +11,8 @@ const renderScene = ({ route }) => {
       return <Profile />;
     // case "second":
     //   return <or />;
+    case "third":
+      return <Personal />;
     default:
       return null;
   }
@@ -19,8 +22,9 @@ export default function Tabs() {
   const layout = useWindowDimensions();
   const [index, setIndex] = useState(0);
   const [routes] = useState([
-    { key: "first", title: "PROFILE" },
-    { key: "second", title: "ORDERS" },
+    { key: "first", title: "Tài khoản" },
+    // { key: "second", title: "ORDERS" },
+    { key: "third", title: "Thông tin cá nhân" },
   ]);
 
   const renderTabsBar = (props) => (
